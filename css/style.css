@@ -38,15 +38,34 @@
 }
 
 .nav-logo {
-  width: 25%;
+  flex-grow: 1;
 }
 
 .nav-link {
-  width: 50%;
+  flex-grow: 3;
   text-align: center;
 }
 
 .nav-login {
-  width: 25%;
+  flex-grow: 1;
   text-align: right;
+}
+
+.bottom-header {
+  height: 350px;
+  display: flex;
+  align-items: center;
+
+  /* debug */
+  background-color: #00008B;
+}
+
+.header-content {
+  height: 80%;
+  width: 50%;
+  margin: 0 auto;
+
+  /* debug */
+  background-color: #EE82EE;
+  border: var(--dashedblack);
 }
