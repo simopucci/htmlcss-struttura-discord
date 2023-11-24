@@ -16,7 +16,6 @@
 .top-header {
   height: 50px;
   
-
   /* debug */
   background-color: #ADD8E6;
 }
@@ -68,4 +67,64 @@
   /* debug */
   background-color: #EE82EE;
   border: var(--dashedblack);
+}
+
+
+/* MAIN */
+
+.main-content {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+
+.white-section {
+  background-color: white;
+}
+
+.grey-section {
+  background-color: #D3D3D3;
+}
+
+.main-container {
+  height: 80%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+} 
+
+.left-content {
+  width: 60%;
+  height: 100%;
+
+  /* debug */
+  background-color: #1E90FF;
+  border: var(--dashedblack);
+}
+
+.right-content {
+  width: 40%;
+  height: 100%;
+
+  /* debug */
+  background-color: #FFC0CB;
+  border: var(--dashedblack);
+}
+
+.bottom-main {
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-main-content {
+  width: 70%;
+  height: 90%;
+  margin: 0 auto;
+  
+
+  /*debug*/
+  background-color: #228B22;
+  border: var(--dashedblack)
 }
