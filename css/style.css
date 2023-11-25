@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -13,11 +14,13 @@
 
 /* HEADER */
 
+#page-header {
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+}
+
 .top-header {
   height: 50px;
-  
-  /* debug */
-  background-color: #ADD8E6;
 }
 
 .nav-bar {
@@ -30,10 +33,12 @@
 
 .nav-item {
   padding: 5px;
-  
-  /* debug */
-  background-color: #DAA520;
-  border: var(--dashedblack)
+  display: flex;
+  align-items: center;
+}
+
+.nav-item>img {
+  height: 25px
 }
 
 .nav-logo {
@@ -41,34 +46,71 @@
 }
 
 .nav-link {
-  flex-grow: 3;
-  text-align: center;
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link>a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  font-weight: bold;
 }
 
 .nav-login {
   flex-grow: 1;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-login>button {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 .bottom-header {
-  height: 350px;
-  display: flex;
-  align-items: center;
+  height: 400px;
+}
 
-  /* debug */
-  background-color: #00008B;
+.header-content>h1 {
+  margin-top: 50px;
 }
 
 .header-content {
   height: 80%;
   width: 50%;
   margin: 0 auto;
-
-  /* debug */
-  background-color: #EE82EE;
-  border: var(--dashedblack);
+  text-align: center;
+  padding: 30px;
+  color: white;
 }
 
+.header-content>p {
+  padding-top: 40px;
+  line-height: 25px;
+}
+
+.white-button {
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.black-button {
+  background-color: #23272A;
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
 
 /* MAIN */
 
@@ -78,13 +120,12 @@
   align-items: center;
 }
 
-
 .white-section {
   background-color: white;
 }
 
 .grey-section {
-  background-color: #D3D3D3;
+  background-color: #F6F6F6;
 }
 
 .main-container {
