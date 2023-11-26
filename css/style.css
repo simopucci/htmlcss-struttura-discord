@@ -115,7 +115,7 @@
 /* MAIN */
 
 .main-content {
-  height: 400px;
+  height: 600px;
   display: flex;
   align-items: center;
 }
@@ -130,43 +130,84 @@
 
 .main-container {
   height: 80%;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 } 
 
 .left-content {
   width: 60%;
   height: 100%;
-
-  /* debug */
-  background-color: #1E90FF;
-  border: var(--dashedblack);
 }
 
 .right-content {
-  width: 40%;
+  width: 30%;
   height: 100%;
+}
 
-  /* debug */
-  background-color: #FFC0CB;
-  border: var(--dashedblack);
+.right-content>h2 {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.right-content>p {
+  padding-top: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .bottom-main {
-  height: 700px;
-  display: flex;
-  align-items: center;
+  height: 1000px;
+  padding-top: 100px;
 }
 
 .bottom-main-content {
   width: 70%;
-  height: 90%;
+  height: 80%;
   margin: 0 auto;
+  text-align: center;
+}
 
-  /*debug*/
-  background-color: #228B22;
-  border: var(--dashedblack)
+.bottom-main-content>h2 {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.bottom-main-content>p {
+  padding: 0 150px;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#adventure>h2 {
+  background-image: url(../img/stars.svg );
+  background-size: contain;
+  width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #8EA1E1;
+  color: white;
+  border-radius: 25px;
+  border: none;
 }
 
 
